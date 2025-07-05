@@ -1,2 +1,9 @@
-config:
-  key: "Hello, World!"
+commands:
+    tpask:
+        cooldown: 15
+    tpaccept:
+        cooldown: 15
+    tpdeny:
+        cooldown: 15
+teleport:
+    lifespan: 60

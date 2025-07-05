@@ -1,12 +1,24 @@
-name: template
+name: tpmacaroon
 version: '0.0.1'
-main: com.github.pinmacaroon.template.PluginMain
+main: com.github.pinmacaroon.tpmacaroon.PluginMain
 load: STARTUP
 authors: [ pin ]
 description: template
 website: https://pinmacaroon.github.io/
 commands:
-  test:
-    aliases: [ hworld, plswork ]
-    description: Test command
+  tpask:
+    aliases: [ tpa ]
+    description: Send a teleport request
+    usage: /<command> <player>
+  tpaccept:
+    aliases: [ tpac ]
+    description: Accept a request
+    usage: /<command> <player>
+  tpdeny:
+    aliases: [ tpd ]
+    description: Reject a request
+    usage: /<command> <player>
+  tpcancel:
+    aliases: [ tpc ]
+    description: Cancel a request
     usage: /<command>
