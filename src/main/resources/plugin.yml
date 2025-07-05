@@ -1,0 +1,12 @@
+name: template
+version: '0.0.1'
+main: com.github.pinmacaroon.template.PluginMain
+load: STARTUP
+authors: [ pin ]
+description: template
+website: https://pinmacaroon.github.io/
+commands:
+  test:
+    aliases: [ hworld, plswork ]
+    description: Test command
+    usage: /<command>
