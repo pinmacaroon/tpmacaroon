@@ -2,6 +2,8 @@ package com.github.pinmacaroon.tpmacaroon;
 
 import com.github.pinmacaroon.tpmacaroon.command.TpacceptCommand;
 import com.github.pinmacaroon.tpmacaroon.command.TpaskCommand;
+import com.github.pinmacaroon.tpmacaroon.command.TpcancelCommand;
+import com.github.pinmacaroon.tpmacaroon.command.TpdenyCommand;
 import com.github.zafarkhaja.semver.Version;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -56,9 +58,9 @@ public final class PluginMain extends JavaPlugin {
         CONFIG = this.getConfig();
 
         this.getCommand("tpask").setExecutor(new TpaskCommand());
-        this.getCommand("tpdeny").setExecutor(new TpaskCommand());
+        this.getCommand("tpdeny").setExecutor(new TpdenyCommand());
         this.getCommand("tpaccept").setExecutor(new TpacceptCommand());
-        //this.getCommand("tpcancel").setExecutor(new TpaskCommand());
+        this.getCommand("tpcancel").setExecutor(new TpcancelCommand());
 
         LOGGER.info(CONFIG.getString("config.key"));
     }
