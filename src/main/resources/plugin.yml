@@ -3,7 +3,7 @@ version: '0.0.1'
 main: com.github.pinmacaroon.tpmacaroon.PluginMain
 load: STARTUP
 authors: [ pin ]
-description: template
+description: small tp plugin for small servers
 website: https://pinmacaroon.github.io/
 commands:
   tpask:
